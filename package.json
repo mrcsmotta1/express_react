@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "dev ": "nodemon --exec babel-node app.js --use_strict",
+    "dev": "nodemon --exec babel-node app.js --use_strict",
     "build": "babel src --out-dir dist --use_strict"
   },
   "repository": {
@@ -21,7 +21,8 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "helmet": "^3.15.1",
-    "mongoose": "^5.4.13"
+    "mongoose": "^5.4.14",
+    "morgan": "^1.9.1"
   },
   "devDependencies": {
     "babel-plugin-transform-runtime": "^6.23.0",
