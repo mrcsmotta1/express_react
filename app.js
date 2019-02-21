@@ -7,11 +7,11 @@ import morgan from 'morgan'
 const app = express()
 
 app.use(morgan('dev'))
-app.use(bodyParser({extended: false}))
+app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 app.use(helmet())
 
-//mongoose.connect('mongodb://localhost:21017/express_react',{useNewUrlParser: true})
+mongoose.connect('mongodb://admin:admin123@localhost:27017/admin',{useNewUrlParser: true})
 
 
 require ('./src/index')(app)
